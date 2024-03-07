@@ -133,6 +133,12 @@ p {
   font-size: 24px;
   color: #515976;
 }
+
+ul {
+  font-family: 'Born', serif;
+  font-size: 24px;
+  color: #515976;
+}
 span.accent {
   color: #ff6c8e;
 }
@@ -275,16 +281,16 @@ li {
   background-image: url('Images/index/sumato.jpg');
 }
 .project-3 {
-  background-image: url('Images/index/clearly.jpg');
+  background-image: url('Images/index/bike_doctor.jpg');
 }
 .project-4 {
-  background-image: url('Images/index/Search.jpg');
+  background-image: url('Images/index/web_redesign.jpg');
 }
 .project-5 {
-  background-image: url('Images/index/Trending.jpg');
+  background-image: url('Images/index/account_portal_hero.jpg');
 }
 .project-6 {
-  background-image: url('Images/index/Handcrafts.jpg');
+  background-image: url('Images/index/blogs.jpg');
 }
 .about-photo-1 {
   min-height: 550px;
