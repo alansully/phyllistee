@@ -120,7 +120,7 @@ h5 {
 h6 {
   font-family: 'Born', serif;
   font-size: 14px;
-  color: #BFC1CC;
+  color: #AAA;
 }
 .delay-200 {
   transition-delay: .2s;
@@ -238,7 +238,7 @@ li {
   //max-width: 1400px;
 }
 .about-content {
-  padding: 90px 20px;
+  padding: 40px 20px;
   max-width: 1050px;
   margin: 0 auto;
 }
@@ -434,7 +434,7 @@ li {
   h4 {
     font-size: 16px;
   }
-  h3, p {
+  h3, p, ul {
     font-size: 18px;
   }
   .project-image h6 {
