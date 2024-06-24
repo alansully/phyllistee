@@ -281,7 +281,7 @@ li {
   background-image: url('Images/index/sumato.jpg');
 }
 .project-3 {
-  background-image: url('Images/index/bike_doctor.jpg');
+  background-image: url('Images/index/Poster.jpg');
 }
 .project-4 {
   background-image: url('Images/index/web_redesign.jpg');
@@ -336,6 +336,15 @@ li {
   display: inline-block;
   margin-right: -4px;
 }
+
+.five-container {
+  width: 18%;
+  display: inline-block;
+  margin-right: -4px;
+  padding: 10px;
+  vertical-align: top;
+}
+
 .timeline-img {
   width: 100px;
   height: 100px;
@@ -530,5 +539,105 @@ li {
   }
   .profile-picture {
     margin: 80px 0 40px 0;
+  }
+}
+
+
+
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 60px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: top;
+}
+/* Style the Image Used to Trigger the Modal */
+#image-gall-1,#image-gall-2,#image-gall-3,#image-gall-4,#image-gall-5,#image-gall-6,#image-gall-7,#image-gall-8,#image-gall-9,#image-gall-10,#image-gall-11,#image-gall-12,#image-gall-13 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#image-gall-1:hover, #image-gall-2:hover, #image-gall-3:hover, #image-gall-4:hover, #image-gall-5:hover,#image-gall-6:hover, #image-gall-7:hover, #image-gall-8:hover, #image-gall-9:hover, #image-gall-10:hover, #image-gall-11:hover, #image-gall-12:hover, #image-gall-13:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal-gallery-fu-sc {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content-gallery-fu-sc {
+  padding-top:80px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption-gallery-fu-sc {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation */
+.modal-content-gallery-fu-sc, #caption-gallery-fu-sc {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close-gallery-fu-sc {
+  position: absolute;
+  top: 85px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close-gallery-fu-sc:hover,
+.close-gallery-fu-sc:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content-gallery-fu-sc {
+    width: 100%;
   }
 }
