@@ -1,0 +1,74 @@
+{% macro heroImage(lgSrc, smSrc, captionLg, captionSm) %}
+  <div class="section-container project-image fadeIn delay-600">
+    <img class="hvr-photo lg-photo" src="{{ lgSrc }}">
+    <img class="hvr-photo sm-photo" src="{{ smSrc }}">
+    <br><br>
+    <h6 class="lg-photo">{{ captionLg | safe }}</h6>
+    <h6 class="sm-photo">{{ captionSm | safe }}</h6>
+  </div>
+{% endmacro %}
+
+{# items: list of {src, captionSm (optional, per-image)}.
+   captionSm: combined sm caption used when items don't carry their own. captionLg: combined lg caption (always last). #}
+{% macro imageBlock(items, captionLg, captionSm) %}
+  <div class="section-container project-image fadeIn delay-800">
+{% for item in items %}
+    <div class="half-container">
+      <img src="{{ item.src }}">
+    </div>
+{% if item.captionSm %}
+    <h6 class="sm-photo">{{ item.captionSm | safe }}</h6>
+{% endif %}
+{% endfor %}
+{% if captionSm %}
+    <h6 class="sm-photo">{{ captionSm | safe }}</h6>
+{% endif %}
+
+    <h6 class="lg-photo">{{ captionLg | safe }}</h6>
+  </div>
+{% endmacro %}
+
+{% macro resultBlock(bgColor, lgSrc, smSrc, captionLg, captionSm) %}
+  <div class="section-container project-image" style="background-color: {{ bgColor }};">
+    <img class="hvr-photo lg-photo" src="{{ lgSrc }}">
+    <img class="hvr-photo sm-photo" src="{{ smSrc }}">
+
+        <h4 class="sm-photo" style="color: #515976;">{{ captionSm | safe }}</h4>
+
+        <h4 class="lg-photo" style="color: #515976;">{{ captionLg | safe }}</h4>
+
+      <br><br><br><br>
+  </div>
+{% endmacro %}
+
+{% macro timelineStep(number, side, heading, body) %}
+{% if side == "right" %}
+          <li class="timeline-step">
+            <div class="step-container step-container-right">
+              <div class="timeline-img">
+                <h1>{{ number }}.</h1>
+              </div>
+              <h4>
+                {{ heading | safe }}
+              </h4>
+              <h5><br>
+                {{ body | safe }}
+              </h5>
+            </div>
+          </li>
+{% else %}
+          <li class="timeline-step">
+            <div class="step-container step-container-left">
+              <div class="timeline-img-right">
+                <h1>{{ number }}.</h1>
+              </div>
+              <h4>
+                {{ heading | safe }}
+              </h4>
+              <h5><br>
+                {{ body | safe }}
+              </h5>
+            </div>
+          </li>
+{% endif %}
+{% endmacro %}

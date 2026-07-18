@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+  <div class="section-container fadeIn delay-200" id="about">
+    <div class="about-content"{% if introStyle %} style="{{ introStyle }}"{% endif %}>
+      <h1>{{ heading | safe }}</h1>
+      <br>
+      <br>
+      <h4>{{ subhead | safe }}</h4>
+      <br>
+      <br>
+      <h5><b>Services</b> | <span style="color: #aaa;">{{ services }}</span></h5>
+    </div>
+  </div>
+{{ content | safe }}

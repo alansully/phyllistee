@@ -1,0 +1,124 @@
+---
+layout: layouts/case-study.njk
+title: "Phyllis Tee | Website Redesign"
+permalink: p4_web-redesign.html
+heading: "UX Writing: Clearly's Website Redesign"
+subhead: "Transforming user experience through UX writing to boost customer engagement and satisfaction in three countries"
+services: "Content Audit, UX Writing, Website Copywriting, Blogging"
+introStyle: "padding-bottom: 60px;"
+relatedGridClass: "project-grid-remove fadeIn delay-800"
+relatedProjects:
+  - href: p4_web-redesign.html
+    imageClass: project-4
+    title: "UX Writing: Clearly’s Website Redesign | 2023"
+  - href: p5_account-portal.html
+    imageClass: project-5
+    title: "UX Writing: Account Portal Screens and Flows | 2023"
+  - href: p6_blog-writing.html
+    imageClass: project-6
+    title: "SEO Blogs: Strategic Content Creation | 2023"
+---
+{% from "partials/case-study-macros.njk" import heroImage, imageBlock, resultBlock, timelineStep %}
+{{ heroImage("Images/p4/hero-nobg.jpg", "Images/p4/hero-nobg.jpg", "Clearly’s redesigned website homepage", "Clearly’s redesigned website homepage") }}
+
+  <br><br><br>
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Challenge/Problem</h2>
+      <br>
+      <br>
+
+      <p>Clearly presented us with the challenge of redesigning their e-commerce website, and migrating all of their website content pages with limited resources and setting lots of timeline-driven restrictions. This is the first time Clearly has ever redesigned their 23-year-old website in Canada, Australia, and New Zealand.</p>
+    </div>
+  </div>
+
+{{ imageBlock([{src: "Images/p4/blog1.jpg"}, {src: "Images/p4/blog2.jpg"}], "<br>Wrote a blog that provides tutorials for users to help them navigate new features and experiences", "<br>Wrote a blog that provides tutorials for users to help them navigate new features and experiences") }}
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>My Role & Process</h2>
+      <br>
+      <br>
+      <p>My role as a lead writer was to craft compelling, user-centric, and mobile-first content that will elevate the overall user experience, ensuring seamless navigation, clear communication, and increased conversion rates.</p>
+
+      <div class="process-timeline-container ">
+        <ul>
+{{ timelineStep(1, "right", "Stakeholder meetings", "Document, prioritize, and agree upon the website redesign requirements including landing pages, search bar, and calls-to-action, as well as SEO and UX copy requirements.") }}
+{{ timelineStep(2, "left", "Content audit", "Review content quality on the \"old\" website to gain insight into content gaps: which content to create, update, re-write, or delete, and ensure a streamlined and cohesive narrative.") }}
+{{ timelineStep(3, "right", "Content templates", "Provide a structured framework that contributes to efficient and effective content creation across various different content types, facilitates collaboration, scales content production, optimizes for UX and SEO, and enables a basis for measurable success.") }}
+{{ timelineStep(4, "left", "Copy development", "Produce high-quality, effective content that resonates with the target audience, page intent, placement of copy, and Google search ranking factors while advancing Clearly’s brand voice.") }}
+{{ timelineStep(5, "right", "Content localization", "Adapt content to suit local audiences in three countries, ensuring a personalized and relatable experience by identifying words and phrases that are commonly spoken in the respective countries.") }}
+{{ timelineStep(6, "left", "Collaborative design", "Work closely with the design team to integrate UX writing seamlessly into the visual elements, creating a harmonious user journey.") }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+{{ imageBlock([{src: "Images/p4/content_audit.jpg"}], "<br><br>Content audit", "<br><br>Content audit") }}
+
+
+
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Solution</h2>
+      <br>
+      <br>
+      <p>Conducted a thorough content audit and implemented effective content solutions for enhancing the overall content quality, relevance, and performance to help visitors easily navigate the redesigned website.
+
+       <br /><br />
+
+      By creating and following a content template, we were able to make sure every content follows a specific format and makes it easier for our team of designers and developers to publish it onto the redesigned website.
+
+      <br /><br />
+
+      Used plain language, persuasive and intuitive content - from page titles to footer copies - to help users make important decisions when interacting with the website while maintaining consistent messaging and clear communication that aligns with the Clearly brand.
+
+       <br /><br />
+
+      Refined microcopy across the website, including user flows, CTAs, error messages, modals, forms, and tooltips, for a more user-friendly interaction.
+
+      <br /><br /> <br /></p>
+
+{{ imageBlock([{src: "Images/p4/contact_lens.jpg"}], "<br><br>Clearly’s contact lens category landing page: used positive language, a conversational tone, and benefit-driven copies for the descriptions", "<br>Clearly’s contact lens category landing page: used positive language, a conversational tone, and benefit-driven copies for the descriptions") }}
+
+      <br /> <br /><br /><br />
+
+      <h2>Key deliverables</h2>
+
+        <p>
+
+        <ul>
+          <li>Copy for all Account portal screens and flows, such as login, dashboards, online orders, payment methods, and profile etc. </li>
+          <br />
+          <li>Copy for checkout flow</li>
+          <br />
+          <li>Copy for Category landing pages, including category descriptions, key product information, and SEO enhancements</li>
+          <br />
+          <li>Copy for all Product landing pages, including product titles, descriptions, and SEO enhancements</li>
+        </ul>
+
+      </p>
+    </div>
+  </div>
+{{ resultBlock("#E8C8A2", "Images/p4/webdesign.jpg", "Images/p4/webdesign.jpg", "<br><br>Published webite", "<br><br>Published webite") }}
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Results and Outcome</h2>
+      <br>
+      <br>
+      <p>The intended outcomes for this project was to improve user trust and confidence, and keep users engaged throughout their journey with the improved clarity and ease of use. The project was delivered on time and well received by stakeholders across the organization. I enjoyed creating streamlined and persuasive UX copies that helped highlight the success of the redesigned website.
+<br /><br />
+</p>
+    </div>
+  </div>
+
+
+
+  <div class="break"></div>
+{% set gridClass = relatedGridClass %}
+{% set gridItems = relatedProjects %}
+{% include "partials/project-grid.njk" %}

@@ -1,0 +1,100 @@
+---
+layout: layouts/case-study.njk
+title: "Phyllis Tee | Novartis Blog"
+permalink: p1_psoriasis_management.html
+heading: "Psoriasis Management Blog Launch"
+subhead: "Establishing a blog site for Novartis to help people with psoriasis tackle the chronic skin condition in Malaysia"
+services: "Content Audit, Information Architecture, User Journey, User Personas, Website Content, On-site Blogging"
+relatedGridClass: "project-grid"
+relatedProjects:
+  - href: p1_psoriasis_management.html
+    imageClass: project-1
+    title: "Psoriasis Management Blog Launch | 2018"
+  - href: p2_hiring_solutions.html
+    imageClass: project-2
+    title: "Hiring Solutions Website Optimisation | 2018"
+  - href: p3_global_sports.html
+    imageClass: project-3
+    title: "Global Sports Business Digital Acquisition | 2018"
+---
+{% from "partials/case-study-macros.njk" import heroImage, imageBlock, resultBlock, timelineStep %}
+{{ heroImage("Images/p1/hero-nobg.jpg", "Images/p1/hero-sm.jpg", "Optimised MyPsoriasis site with unique content", "Optimised MyPsoriasis site with unique content") }}
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Challenge/Problem</h2>
+      <br>
+      <br>
+      <p>Novartis presented us with the challenge of blogging about Psoriasis, a rare skin disease, and promoting their medically advanced treatment without providing any information and setting lots of industry-driven restrictions. Novartis has never done any digital content in Malaysia.</p>
+    </div>
+  </div>
+
+{{ imageBlock([{src: "Images/p1/postits.jpg"}, {src: "Images/p1/sketch.jpg"}], "Optimised landing pages of MyPsoriasis site with unique content, keywords, links, and call to action.", "Optimised landing pages of MyPsoriasis site with unique content, keywords, links, and call to action.") }}
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>My Role & Process</h2>
+      <br>
+      <br>
+      <p>Through a 3-week long Research, Planning and Discovery phase, I developed a patient journey map, content pillars, user personas, competitor analysis, editorial calendar, and sitemap mockups.</p>
+
+      <div class="process-timeline-container ">
+        <ul>
+{{ timelineStep(1, "right", "Patient journey", "Capture the patient&#39;s interaction across the solution. Their feelings, pain points, and moments of delight.") }}
+{{ timelineStep(2, "left", "Content pillars", "Support content strategy and improve site architecture. Address all of the primary questions, issues or concerns a user might have.") }}
+{{ timelineStep(3, "right", "User personas", "Clearly define each persona&#39;s pain points and craft a psychographic profile. Create a real user with real problems and real needs that would be willing to use client&#39;s service or buy client&#39;s product.") }}
+{{ timelineStep(4, "left", "Competitor analysis", "Identify key competitors and evaluate their strategies to determine their strengths and weaknesses.") }}
+{{ timelineStep(5, "right", "Editorial calendar", "Define and control the process of creating content, from idea through writing and publication. Brainstorm content ideas to publish, where to publish, and when to publish. Develop a publishing schedule that helps maintain a consistent presence.") }}
+{{ timelineStep(6, "left", "Blog sitemap mockups and URL optimisation", "Represent the structure of information, visualise the content and demonstrate the basic functionalities in a static way. Optimise URL for SEO to create new web pages.") }}
+        </ul>
+      </div>
+    </div>
+  </div>
+{{ imageBlock([{src: "Images/p1/IA.jpg"}, {src: "Images/p1/moodboard.jpg"}], "<br><br>Psoriasis patient journey map (left), blog sitemap mockup (right)", "<br>Psoriasis patient journey map (top), blog sitemap mockup (bottom)") }}
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Solution</h2>
+      <br>
+      <br>
+      <p>Implemented content pillars along the user journey. Created and delivered valuable, relevant, and meaningful content throughout the user journey.
+
+Developed user personas to help clients have a better understanding of a user&#39;s motives and ways of interacting with the brand.
+
+          <br /><br />
+
+Conducted a competitor analysis to create effective competitive strategies in the target market.
+
+Planned an editorial calendar to provide strategic directions on when/what/why/how to create, maintain, and promote content that helps consumers make informed decisions about their purchases to build brand loyalty and satisfaction.
+        <br /><br />
+Designed 2 sitemap mockups for blog section to define client&#39;s expectations for their validation and approval, which helped the web development agency see the site in action before any code is written.
+
+Collaborated with SEO team to produce content that drive search primacy for MyPsoriasis on-page optimisation.
+</p>
+    </div>
+  </div>
+{{ resultBlock("#E9D560", "Images/p1/second-nobg.jpg", "Images/p1/second-nobg.jpg", "<br><br>Published blog", "<br><br>Published blog") }}
+
+  <div class="section-container fadeIn delay-800">
+    <div class="about-content">
+      <h2>Results and Outcome</h2>
+      <br>
+      <br>
+      <p>Successfully launched a blog site for MyPsoriasis to help its audience achieve their goals.
+<br /><br />
+I prepared an annual content plan that was approved on the spot and finished the first draft of 1/3 the annual workload for 2018 by the month of January.
+<br /><br />
+The outcome was an appealing, user-friendly and rich website, optimised for SEO performance and long-term success.
+<br /><br />
+I created value-driven content that resonates with its audiences search behavior and impacts visits on MyPsoriasis site. Organically increased its page views to 11 times the previous year (8524 vs 737). By the end of 2018, the site ranked third on Google for &#39;psoriasis&#39; through content.
+</p>
+    </div>
+  </div>
+
+{{ imageBlock([{src: "Images/p1/google_analytics1.jpg"}, {src: "Images/p1/google_analytics2.jpg"}], "<br><br>Audience overview - extracted from Google Analytics (left), Ranked 3rd on Google (right)", "<br><br>Audience overview - extracted from Google Analytics (top), Ranked 3rd on Google (bottom)") }}
+
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="break"></div>
+{% set gridClass = relatedGridClass %}
+{% set gridItems = relatedProjects %}
+{% include "partials/project-grid.njk" %}
