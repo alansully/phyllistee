@@ -74,15 +74,15 @@ body, html {
 }
 @font-face {
   font-family: 'Born';
-  src: url('Fonts/Born.eot');
-  src: url('Fonts/Born.eot?#iefix') format('embedded-opentype'), url('Fonts/Born.woff2') format('woff2'), url('Fonts/Born.woff') format('woff'), url('Fonts/Born.ttf') format('truetype'), url('Fonts/Born.svg#Born') format('svg');
+  src: url('fonts/Born.eot');
+  src: url('fonts/Born.eot?#iefix') format('embedded-opentype'), url('fonts/Born.woff2') format('woff2'), url('fonts/Born.woff') format('woff'), url('fonts/Born.ttf') format('truetype'), url('fonts/Born.svg#Born') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Nickainley Normal';
-  src: url('Fonts/Nickainley-Normal.eot');
-  src: url('Fonts/Nickainley-Normal.eot?#iefix') format('embedded-opentype'), url('Fonts/Nickainley-Normal.woff2') format('woff2'), url('Fonts/Nickainley-Normal.woff') format('woff'), url('Fonts/Nickainley-Normal.ttf') format('truetype'), url('Fonts/Nickainley-Normal.svg#Nickainley-Normal') format('svg');
+  src: url('fonts/Nickainley-Normal.eot');
+  src: url('fonts/Nickainley-Normal.eot?#iefix') format('embedded-opentype'), url('fonts/Nickainley-Normal.woff2') format('woff2'), url('fonts/Nickainley-Normal.woff') format('woff'), url('fonts/Nickainley-Normal.ttf') format('truetype'), url('fonts/Nickainley-Normal.svg#Nickainley-Normal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
