@@ -86,6 +86,13 @@ body, html {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather.eot');
+  src: url('fonts/Merriweather.eot?#iefix') format('embedded-opentype'), url('fonts/Merriweather.woff2') format('woff2'), url('fonts/Merriweather.woff') format('woff'), url('fonts/Merriweather.ttf') format('truetype'), url('fonts/Merriweather.svg#Merriweather') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
