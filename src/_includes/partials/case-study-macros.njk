@@ -33,9 +33,9 @@
     <img class="hvr-photo lg-photo" src="{{ lgSrc }}">
     <img class="hvr-photo sm-photo" src="{{ smSrc }}">
 
-        <h4 class="sm-photo" style="color: #515976;">{{ captionSm | safe }}</h4>
+        <h4 class="sm-photo" style="color: var(--color-ink);">{{ captionSm | safe }}</h4>
 
-        <h4 class="lg-photo" style="color: #515976;">{{ captionLg | safe }}</h4>
+        <h4 class="lg-photo" style="color: var(--color-ink);">{{ captionLg | safe }}</h4>
 
       <br><br><br><br>
   </div>
@@ -46,7 +46,7 @@
           <li class="timeline-step">
             <div class="step-container step-container-right">
               <div class="timeline-img">
-                <h1>{{ number }}.</h1>
+                <span class="step-number">{{ number }}.</span>
               </div>
               <h4>
                 {{ heading | safe }}
@@ -60,7 +60,7 @@
           <li class="timeline-step">
             <div class="step-container step-container-left">
               <div class="timeline-img-right">
-                <h1>{{ number }}.</h1>
+                <span class="step-number">{{ number }}.</span>
               </div>
               <h4>
                 {{ heading | safe }}

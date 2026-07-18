@@ -72,6 +72,12 @@ body, html {
   max-width: 100%;
   overflow-x: hidden;
 }
+:root {
+  --color-ink: #515976;
+  --color-muted: #646C8A;
+  --color-accent: #CE3566;
+  --color-bg-muted: #f6f6f6;
+}
 @font-face {
   font-family: 'Born';
   src: url('fonts/Born.eot');
@@ -96,38 +102,43 @@ body, html {
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
-  line-height: 1.4em;
   font-weight: normal;
 }
-h1 {
+h1, h2, h3 {
+  line-height: 1.15em;
+}
+h4, h5, h6, p {
+  line-height: 1.4em;
+}
+h1, .step-number {
   font-family: 'Merriweather', serif;
   font-size: 48px;
-  color: #515976;
+  color: var(--color-ink);
 }
 h2 {
   font-family: 'Nickainley Normal';
   font-size: 38px;
-  color: #515976;
+  color: var(--color-ink);
 }
 h3 {
   font-family: 'Born', serif;
   font-size: 26px;
-  color: #515976;
+  color: var(--color-ink);
 }
 h4 {
   font-family: 'Born', serif;
   font-size: 20px;
-  color: #515976;
+  color: var(--color-ink);
 }
 h5 {
   font-family: 'Born', serif;
   font-size: 16px;
-  color: #515976;
+  color: var(--color-ink);
 }
 h6 {
   font-family: 'Born', serif;
-  font-size: 14px;
-  color: #AAA;
+  font-size: 13px;
+  color: var(--color-muted);
 }
 .delay-200 {
   transition-delay: .2s;
@@ -137,34 +148,33 @@ h6 {
 }
 p {
   font-family: 'Born', serif;
-  font-size: 24px;
-  color: #515976;
+  font-size: 18px;
+  color: var(--color-ink);
 }
 
 ul {
   font-family: 'Born', serif;
-  font-size: 24px;
-  color: #515976;
-}
-span.accent {
-  color: #ff6c8e;
+  font-size: 18px;
+  color: var(--color-ink);
 }
 img, video {
   width: 100%;
 }
 a {
   font-family: 'Born', serif;
-  color: #ff6c8e;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 a.no-decoration {
-  color: #515976;
+  color: var(--color-ink);
+  text-decoration: none;
 }
 a.no-decoration:hover {
   text-decoration: none;
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 ul {
   padding: 0;
@@ -252,18 +262,6 @@ li {
 .about-content.sm-top {
   padding: 0px 20px 140px 20px;
 }
-.section-container.blue {
-  background-color: #0F1C47;
-}
-.section-container.blue h2, .section-container.blue p {
-  color: white;
-}
-.section-container.red {
-  background-color: #CB201F;
-}
-.section-container.red h2, .section-container.red p {
-  color: white;
-}
 .project-image, .about-photo-container {
   width: 100%;
   margin: 0;
@@ -307,18 +305,6 @@ li {
   min-height: 500px;
   background-image: url('Images/index/brainstorming.jpg');
 }
-.hvr-photo-6 {
-  background-image: url('Images/weightcut/mobile.png');
-  min-height: 860px;
-}
-.social-photo-1 {
-  background-image: url('Images/social/hero.png');
-  min-height: 860px;
-}
-.social-photo-2 {
-  background-image: url('Images/social/second.png');
-  min-height: 1000px;
-}
 .light-gray-bg {
   background-color: #f6f6f6;
 }
@@ -328,8 +314,8 @@ li {
 .footer {
   font-family: 'Born', serif;
   font-weight: normal;
-  color: #bababa;
-  font-size: 12px;
+  color: var(--color-muted);
+  font-size: 13px;
   padding-bottom: 30px;
 }
 .lg-photo {
@@ -342,14 +328,6 @@ li {
   width: 50%;
   display: inline-block;
   margin-right: -4px;
-}
-
-.five-container {
-  width: 18%;
-  display: inline-block;
-  margin-right: -4px;
-  padding: 10px;
-  vertical-align: top;
 }
 
 .timeline-img {
@@ -366,12 +344,12 @@ li {
   margin-bottom: 38px;
   position: relative;
 }
-.timeline-img h1 {
+.timeline-img .step-number {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.timeline-img-right h1 {
+.timeline-img-right .step-number {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -429,19 +407,11 @@ li {
 .process-timeline-container {
   margin-top: 100px;
 }
-.seller-hero {
-  margin-top: -100px;
-}
-.hobby {
-  width: 400px;
-  padding: 10px;
-  display: inline-block;
-}
 @media only screen and (max-width:550px) {
   img[data-src-550px] {
     content: attr(data-src-550px, url);
   }
-  h1 {
+  h1, .step-number {
     font-size: 32px;
   }
   h2 {
@@ -450,7 +420,7 @@ li {
   h4 {
     font-size: 16px;
   }
-  h3, p, ul {
+  h3 {
     font-size: 18px;
   }
   .project-image h6 {
@@ -490,15 +460,12 @@ li {
   .step-container-right:before, .step-container-left:before {
     background: none;
   }
-  .hobby {
-    width: 290px;
-  }
   .profile-picture {
     margin: 80px 0 40px 0;
   }
 }
 @media only screen and (min-width:550px) and (max-width:900px) {
-  h1 {
+  h1, .step-number {
     font-size: 38px;
   }
   h2 {
@@ -507,7 +474,7 @@ li {
   h4 {
     font-size: 16px;
   }
-  h3, p {
+  h3 {
     font-size: 24px;
   }
   .project-image h6 {
@@ -541,9 +508,6 @@ li {
   .step-container-right:before, .step-container-left:before {
     background: none;
   }
-  .hobby {
-    width: 290px;
-  }
   .profile-picture {
     margin: 80px 0 40px 0;
   }
@@ -572,12 +536,12 @@ li {
   vertical-align: top;
 }
 /* Style the Image Used to Trigger the Modal */
-#image-gall-1,#image-gall-2,#image-gall-3,#image-gall-4,#image-gall-5,#image-gall-6,#image-gall-7,#image-gall-8,#image-gall-9,#image-gall-10,#image-gall-11,#image-gall-12,#image-gall-13 {
+#image-gall-1,#image-gall-2,#image-gall-3,#image-gall-4,#image-gall-5 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
-#image-gall-1:hover, #image-gall-2:hover, #image-gall-3:hover, #image-gall-4:hover, #image-gall-5:hover,#image-gall-6:hover, #image-gall-7:hover, #image-gall-8:hover, #image-gall-9:hover, #image-gall-10:hover, #image-gall-11:hover, #image-gall-12:hover, #image-gall-13:hover {opacity: 0.7;}
+#image-gall-1:hover, #image-gall-2:hover, #image-gall-3:hover, #image-gall-4:hover, #image-gall-5:hover {opacity: 0.7;}
 /* The Modal (background) */
 .modal-gallery-fu-sc {
   display: none; /* Hidden by default */
