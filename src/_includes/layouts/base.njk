@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link href="styles.css" rel="stylesheet">
+{% if modal %}
+  <script src="modal.js"></script>
+{% endif %}
+</head>
+<body>
+{% if modal %}
+{% include "partials/modal.njk" %}
+{% endif %}
+{% if diagonalHeader %}
+  <div class="header-diagonal-background"></div>
+{% endif %}
+{% include "partials/nav.njk" %}
+{{ content | safe }}
+{% include "partials/footer.njk" %}
+</body>
+</html>
