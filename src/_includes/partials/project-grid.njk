@@ -7,6 +7,9 @@
         </div>
         <div class="project-title">
           <h5>{{ item.title }}</h5>
+{% if item.diff %}
+          <h6 class="project-diff">{{ item.diff }}</h6>
+{% endif %}
         </div>
       </div><!--project-->
     </a>

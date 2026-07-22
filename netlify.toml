@@ -4,3 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/p5_account-portal.html"
+  to = "/p4_web-redesign.html"
+  status = 301
