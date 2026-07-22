@@ -4,7 +4,7 @@
     </div>
 {% if fullNav %}
     <div class="right">
-      <a class="no-decoration" href="#about">About</a>
+      <a class="no-decoration" href="{% if page.url == '/' %}#about{% else %}/#about{% endif %}">About</a>
     </div>
     <div class="right"><a href="resume/phyllistee_resume.pdf" target="_blank">My Résumé</a></div>
 {% endif %}
